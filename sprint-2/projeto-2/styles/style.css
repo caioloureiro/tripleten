@@ -1,0 +1,167 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  min-height: 720px;
+  max-height: 800px;
+  padding: 30px 80px 40px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+}
+
+.nav__links {
+  display: flex;
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+  gap: 20px;
+}
+
+.nav__link {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  flex: 1;
+}
+
+.header__title {
+  font-size: 44px;
+  line-height: 52px;
+  font-weight: 600;
+  max-width: 544px;
+  margin: 0;
+}
+
+.header__description {
+  font-size: 20px;
+  line-height: 30px;
+  color: black;
+  max-width: 544px;
+  margin-top: 20px;
+}
+
+.header__image {
+  width: 100%;
+  max-width: 496px;
+}
+
+.header__footer {
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  box-sizing: border-box;
+}
+
+.header__link {
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+.header__address {
+  margin: 0;
+  color: #838383;
+}
+
+.content {
+  background-image: url("../images/staff_picks_background.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 100px 80px;
+}
+
+.staff {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.staff__title {
+  font-size: 44px;
+  line-height: 52px;
+  font-weight: 600;
+  margin: 0 0 24px;
+  color: white;
+  text-align: center;
+}
+
+.staff__subtitle {
+  font-size: 20px;
+  line-height: 30px;
+  color: white;
+  margin: 0 0 68px;
+  text-align: center;
+}
+
+.staff ul {
+  display: grid;
+  grid-template-columns: repeat(2, 360px);
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card {
+  width: 360px;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.card__content {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  height:100%;
+}
+
+.card__title {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+  margin: 0 0 16px;
+}
+
+.card__text {
+  font-size: 14px;
+  line-height: 22px;
+  margin: 0 0 20px;
+}
+
+.card__footer {
+  font-size: 14px;
+  line-height: 22px;
+  color: #a9a9a9;
+  margin: 0;
+}
