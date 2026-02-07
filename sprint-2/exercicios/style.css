@@ -8,8 +8,15 @@ max-width: 1330px;
 min-width: 1280px;
 margin: auto;
 }
-.header-link {
+.title {
 margin: auto;
+}
+.subtitle {
+font-size: 34px;
+margin: 0 0 40px;
+text-align: center;
+}
+.header-link {
 font-size: 28px;
 text-decoration: none;
 color: #10191E;
