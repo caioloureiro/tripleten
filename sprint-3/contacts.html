@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Contacte-nos</title>
+        <link rel="stylesheet" href="styles/normalize.css" />
+        <link rel="stylesheet" href="styles/style.css" />
+        <link rel="stylesheet" href="https://practicum-content.s3.us-west-1.amazonaws.com/web-code/libs/moved_dark-theme.css" />
+    </head>
+    <body class="page">
+        <header class="header">
+            <img
+                src="images/logo_color.svg"
+                alt="logotipo TripleTen"
+                class="logo logo_theme_light"
+            />
+            <img
+                src="images/logo_white.svg"
+                alt="logotipo TripleTen"
+                class="logo logo_theme_dark"
+            />
+            <nav class="menu">
+                <a href="index.html" class="menu__link">Página Inicial</a>
+                <a href="about.html" class="menu__link">Sobre</a>
+                <a href="contacts.html" class="menu__link">Contate-nos</a>
+            </nav>
+        </header>
+        <main class="content">
+            <h1 class="main-title">Mande uma mensagem:</h1>
+            <form class="contact-form">
+                <label for="name" class="contact-form__label">Nome:</label>
+                <input type="text" id="name" class="contact-form__input" />
+                <label for="email" class="contact-form__label">E-mail:</label>
+                <input type="email" id="email" class="contact-form__input" />
+                <label for="message" class="contact-form__label"
+                    >Sua mensagem:</label
+                >
+                <textarea
+                    id="message"
+                    class="contact-form__textarea"
+                ></textarea>
+                <input
+                    type="submit"
+                    value="send"
+                    class="contact-form__button"
+                />
+            </form>
+        </main>
+        <footer class="footer">
+            <p class="footer__copyright">© TripleTen</p>
+        </footer>
+    </body>
+</html>
