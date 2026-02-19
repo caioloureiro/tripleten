@@ -90,6 +90,9 @@
     margin-bottom: 60px;
     border-top: 2px solid #ff6666;
     border-bottom: 2px solid #ff6666;
+    position: relative;
+    top: 5px;
+    left: 60px;
   }
   
 /* propriedades para a informação das fontes das citações */
@@ -105,11 +108,12 @@
 /* estas são as regras para o menu e seus elementos; 
  estes precisam ser escritos separadamente devido ao seu posicionamento único */
   .menu__item {
-    position: static;
+    position: fixed;
   }
   
   .menu__item_theme_landscape {
-  
+    top: 40px;
+    left: 40px;
   }
   
   .menu__item_theme_portrait {
@@ -135,7 +139,7 @@
   
 /* muda a cor de um link para outra seção da página quando o mouse estiver passando sobre ele */
   .menu__link:hover {
-    /* color: #ff6666; */
+    color: #ff6666;
   }
   
 /* propriedades compartilhadas por todas as imagens que emergem junto a seus respectivos 
