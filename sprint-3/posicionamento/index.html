@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <!-- O título principal-->
+  <title>Como tirar fotos com seu telefone</title>
+  <link rel="stylesheet" href="https://practicum-content.s3.us-west-1.amazonaws.com/web-code/moved_normalize.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- está é a caixa para todos os conteúdos na página web; nós precisamos dela para atribuir 
+ as propriedades CSS à página usando um seletor de classe em vez do elemento body -->
+
+  <div class="page">
+
+    <!-- este é o menu que está do lado esquerdo -->
+    <nav class="menu">
+
+      <!-- a classe de bloco menu__item denota uma caixa com um menu, enquanto o modificador menu__item_landscape mostra o tema do ponto (paisagem) -->
+      <div class="menu__item menu__item_theme_landscape">
+
+        <!-- link para a página sobre paisagem com um hash # no lugar do endereço por enquanto -->
+        <a href="#" class="menu__link menu__link_theme_landscape">Paisagem</a>
+
+        <!-- imagem simbolizando o tema do ponto de menu (paisagem); ela vai surgir ao lado do link no futuro, quando o cursor passar sobre isso -->
+        <img src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_landscape_hover.jpg" alt="" class="menu__picture menu__picture_theme_landscape">
+      </div>
+      <!-- o final da caixa com o ponto de menu; os outros três pontos são configurados da mesma maneira -->
+
+      <!-- <div class="menu__item menu__item_theme_portrait">
+        <a href="#" class="menu__link menu__link_portrait">Retrato</a>
+        <img src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_portrait_hover.jpg" alt="" class="menu__picture menu__picture_theme_portrait">
+      </div>
+      <div class="menu__item menu__item_theme_viewpoint">
+        <a href="#" class="menu__link menu__link_viewpoint">Perspectiva</a>
+        <img src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_viewpoint_hover.jpg" alt="" class="menu__picture menu__picture_theme_viewpoint">
+      </div>
+      <div class="menu__item menu__item_theme_expression">
+        <a href="#" class="menu__link menu__link_expression">Expressão</a>
+        <img src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_expression_hover.jpg" alt="" class="menu__picture menu__picture_theme_expression">
+      </div> -->
+    </nav>
+
+    <!-- área de conteúdo principal -->
+    <section class="content">
+
+      <!-- caixa com página de texto e ilustrações, necessária para gerenciar suas propriedades comuns -->
+      <div class="content__container">
+
+        <!-- caixa com introdução -->
+        <div class="content__head">
+
+        <!-- o cabeçalho de página tem um primeiro nível de h1 --> 
+        <!-- todos os títulos têm a classe ""content__title"" e são diferenciados pelos modificadores; o modificador _main-item denota o título para todo o texto na página -->
+
+          <h1 class="content__title content__title_item_main">A Ideia por trás das fotos</h1>
+
+          <!-- texto de parágrafo normal com classe "content__text" -->
+          <p class="content__text">
+            Fotos que possuem elementos misteriosos levam as pessoas a serem espectadores ativos. 
+            Não importa qual dispositivo ou lentes você use, resolver um quebra-cabeça é uma grande parte da atração 
+            para a maioria dos fotógrafos profissionais. Os espectadores vão se sentir realizados 
+            e valorizados ao desvendar a mensagem oculta em sua imagem. Elaborar uma viagem de 
+            pensamento e sentimento para seu público pode ser um exercício gratificante para você e para eles.
+          </p>
+
+        <!-- uma citação dada à classe especial "content__quote" para que um seletor para a classe possa ser usado para dar a todas as citações o mesmo formato -->
+          <p class="content__quote">
+            "A visão é a ação mais rápida que uma pessoa pode realizar, mas ao mesmo tempo, nós vemos apenas um único objeto."
+
+            <!-- a tag span isola a área do parágrafo que mostra a fonte da citação, com essa área dada a classe "content__quote-origin" -->
+            <span class="content__quote-origin">Leonardo da Vinci, Tratado de Pintura</span>
+          </p>
+        </div>
+        <!-- fim da caixa com a introdução -->
+
+        <!-- caixa com o primeiro capítulo -->
+        <div class="content__item">
+
+          <!-- nomes dos capítulos, seções — títulos de segundo nível h2, todos eles com a classe geral "content__title_sub-item" -->
+          <h2 class="content__title content__title_item_sub">Controlando a Direção do Olhar/h2>
+
+<!-- os nomes de subseções são de títulos de terceiro nível h3; todos eles com a classe "content__title_method-name"; observe a sintaxe do modificador com as palavras método e nome: antes do nome e do subtraço entre as duas partes do nome _method-name -->          
+        <h3 class="content__title content__title_item_method">Enquadramento</h3>
+          <p class="content__text">
+            As molduras enfatizam a importância geral dos objetos localizados dentro delas. 
+            O enquadramento pode ser útil ao tentar tirar uma foto original de algo 
+            muito conhecido. A Torre Eiffel, por exemplo, pode parecer muito mais interessante quando 
+            fotografada através de uma janela. Arcos, persianas, portas e buracos podem servir como uma moldura. 
+            Se a imagem em si já for cativante, você pode tornar a moldura mais fina. 
+            Por outro lado, se for apenas uma foto do céu azul, as molduras mais grossas podem ser apreciadas 
+            por seu próprio valor.
+          </p>
+
+          <!-- a caixa com uma ilustração; o resto está configurado da mesma maneira -->
+          <div class="content__image">
+
+            <!-- uma ilustração com texto; o resto está configurado da mesma maneira -->
+            <img src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_frame.jpg" alt="" class="content__image-item">
+
+            <!-- a área de cobertura que vai ficar sobre a imagem quando o cursor passar sobre ela -->
+            <div class="content__image-cover">
+              <!-- texto para a legenda da ilustração -->
+              <p class="content__image-name">Nighttime Smile, Moscou</p>
+            </div>
+            <!-- final da área de cobertura -->
+          </div>
+          <!-- final da caixa com a ilustração -->
+
+          <h3 class="content__title content__title_item_method">Cobrir</h3>
+          <p class="content__text">
+            Um conteúdo semitransparente colocado no primeiro plano pode também atrair a atenção do espectador. 
+            Efeitos borrados ou difusos, por exemplo, podem ajudar o artista a redirecionar o olhar do espectador 
+            do primeiro para o segundo plano da imagem. A parte da imagem com mais ênfase ao 
+            usar uma técnica como esta é a que geralmente está escondida. Esconder ligeiramente nossos objetos 
+            cria um recurso visual, despertando a curiosidade do público.
+          </p>
+          <div class="content__image">
+            <img src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_cover.jpg" alt="" class="content__image-item">
+            <div class="content__image-cover">
+              <p class="content__image-name">Volleyball in the Forest, Serebryany Bor</p>
+            </div>
+          </div>
+        </div>
+        <div class="content__item">
+          <h2 class="content__title content__title_item_sub">Indicações vetoriais</h2>
+                    <p class="content__text">
+                        Vetores em fotografia agem como um guia visual para o olho. Eles podem ser em forma de linhas, ou 
+                        uma mudança na iluminação, cor ou forma. Atraem a atenção do espectador para o que é mais importante. 
+                        Para melhores resultados, é uma boa ideia combinar dois tipos diferentes de vetores que vão 
+                        se equilibrar entre si. Neste caso, o espectador vai seguir um vetor até o final antes de 
+                        retornar à sua origem através do outro vetor. Trata-se de uma divertida e pequena viagem em torno da imagem que te leva 
+                        a fazer uma série de descobertas fascinantes no processo. Os vetores direcionam a atenção até o ponto 
+                        onde eles convergem ou divergem.
+          </p>
+          <div class="content__image">
+            <img src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_vector1.jpg" alt="" class="content__image-item">
+            <div class="content__image-cover">
+              <p class="content__image-name">Flare, Moscou</p>
+            </div>
+          </div>
+          <p class="content__text">
+            Um dos vetores mais efetivos que pode ser usado é o que foca na direção na qual 
+            alguém na imagem está olhando, uma técnica muito usada na pintura do Renascimento. 
+            Dois olhares que se cruzam podem dizer muito sobre a relação dos sujeitos. Alternativamente, 
+            os vislumbres que convergem em algum lugar podem indicar o que é mais importante em uma imagem. Os espectadores vão
+            seguir satisfatoriamente qualquer método que você escolha em uma tentativa de resolver o enigma.
+          </p>
+          <div class="content__image">
+            <img src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_vector.jpg" alt="" class="content__image-item">
+            <div class="content__image-cover">
+              <p class="content__image-name">Sports Ground, Votkinsk</p>
+            </div>
+          </div>
+        </div>
+        <!-- fim da caixa com o primeiro capítulo -->
+
+        <!-- caixa com o segundo capítulo -->
+        <div class="content__item">
+          <h2 class="content__title content__title_item_sub">Gerenciar cálculos</h2>
+          <p class="content__text">
+            Pelo mais incrível que pareça, as pessoas sempre contando para si mesmas e buscando 
+            formas geométricas ao seu redor. Encontrar uma forma geométrica escondida em uma imagem 
+            faz o espectador se sentir um detetive. É um estimulante fluxo de emoções positivas 
+            que pode durar muito tempo depois de olhar a imagem.
+          </p>
+          <h3 class="content__title content__title_item_method">Triângulos</h3>
+          <p class="content__text">
+            Triângulos formados por elementos aleatórios se destacam. Nossa imaginação parece gostar até mesmo de triângulos não existentes.
+          </p>
+          <div class="content__image">
+            <img src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_triangle.jpg" alt="" class="content__image-item">
+            <div class="content__image-cover">
+              <p class="content__image-name">Winter Sports, Estação Vesennyaya</p>
+            </div>
+          </div>
+          <h3 class="content__title content__title_item_method">Curvas expressivas</h3>
+          <p class="content__text">A perfeição gráfica da parábola e hipérbole é impressionante.</p>
+          <div class="content__image">
+            <img src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_parabola.jpg" alt="" class="content__image-item">
+            <div class="content__image-cover">
+              <p class="content__image-name">After the Rain, Colina Poklonnaya</p>
+            </div>
+          </div>
+          <h3 class="content__title content__title_item_method">Linhas paralelas</h3>
+          <p class="content__text">Ocorrem tão raramente na natureza que você tenta descobrir quem foi que as colocou lá.</p>
+          <div class="content__image">
+            <img src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_parallel.jpg" alt="" class="content__image-item">
+            <div class="content__image-cover">
+              <p class="content__image-name">Metro Sunset, Moscou</p>
+            </div>
+          </div>
+          <h3 class="content__title content__title_item_method">Decorações</h3>
+          <p class="content__text">
+            É sempre divertido descobrir decorações criadas com objetos simples.
+          </p>
+          <div class="content__image">
+            <img src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_ornament.jpg" alt="" class="content__image-item">
+            <div class="content__image-cover">
+              <p class="content__image-name">September, Moscou</p>
+            </div>
+          </div>
+          <h3 class="content__title content__title_item_method">Ritmo</h3>
+          <p class="content__text">
+            Objetos idênticos esmaecendo ao fundo lhe dão uma estimativa de distância e altura. Os espectadores sempre gostam disso.
+          </p>
+          <div class="content__image">
+            <img src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_rythm.jpg" alt="" class="content__image-item">
+            <div class="content__image-cover">
+              <p class="content__image-name">Geometry of Space, Sochi</p>
+            </div>
+          </div>
+          <h3 class="content__title content__title_item_method">Reflexos</h3>
+          <p class="content__text">
+            Todo mundo tenta descobrir de que lado da foto está o reflexo. 
+            Isso é especialmente divertido quando há múltiplos reflexos.
+          </p>
+          <div class="content__image">
+            <img src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_reflection.jpg" alt="" class="content__image-item">
+            <div class="content__image-cover">
+              <p class="content__image-name">Landmark, Moscou</p>
+            </div>
+          </div>
+        </div>
+        <!-- fim da caixa com o segundo capítulo -->
+
+        <!-- caixa com o terceiro capítulo -->
+        <div class="content__item">
+          <h2 class="content__title content__title_item_sub">Gerenciar emoções</h2>
+          <p class="content__text">
+            O plano de fundo emocional é criado pelo subconsciente. Se você analisar o conteúdo, a cor dominante 
+            exerce uma influência psicológica que não podemos controlar. A pessoa por trás da câmera pode criar um determinado 
+            humor mediante a seleção de cores.
+          </p>
+          <h3 class="content__title content__title_item_method">Vermelho</h3>
+          <p class="content__text">
+            A cor do desejo e paixão. A cor vermelha carrega consigo energia, 
+            força vital e perigo ao mesmo tempo.
+          </p>
+          <div class="content__image">
+            <img src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_red.jpg" alt="" class="content__image-item">
+            <div class="content__image-cover">
+              <p class="content__image-name">Riga Express, Moscou</p>
+            </div>
+          </div>
+          <h3 class="content__title content__title_item_method">Amarelo</h3>
+          <p class="content__text">
+            Uma cor que melhora o humor e o apetite. Tudo que é amarelo atrai o espectador 
+            com um sorriso que diz que a vida é bela.
+          </p>
+          <div class="content__image">
+            <img src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_yellow.jpg" alt="" class="content__image-item">
+            <div class="content__image-cover">
+              <p class="content__image-name">Glass Distortion, Izhevsk</p>
+            </div>
+          </div>
+          <h3 class="content__title content__title_item_method">Verde</h3>
+          <p class="content__text">
+            A cor da harmonia e do crescimento. O verde claro e perfeito para as crianças brincarem na natureza, criando a 
+            impressão de crescer em um ambiente seguro. Não surpreende que o sinal de avançar seja uma luz verde.
+          </p>
+          <div class="content__image">
+            <img src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_green.jpg" alt="" class="content__image-item">
+            <div class="content__image-cover">
+              <p class="content__image-name">Morning Practice, Moscou</p>
+            </div>
+          </div>
+          <h3 class="content__title content__title_item_method">Azul</h3>
+          <p class="content__text">
+            A cor da segurança e da confiança. Ao contrário da cor amarela, o azul se afasta do espectador, 
+            criando uma leve sensação de tristeza.
+          </p>
+          <div class="content__image">
+            <img src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_blue.jpg" alt="" class="content__image-item">
+            <div class="content__image-cover">
+              <p class="content__image-name">Airport, Izhevsk</p>
+            </div>
+          </div>
+          <h3 class="content__title content__title_item_method">Roxo</h3>
+          <p class="content__text">
+            Esta cor cria uma impressão de dignidade, grandeza (especialmente com um tom escarlate), 
+            autossuficiência e criatividade.
+          </p>
+          <div class="content__image">
+            <img src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_violet.jpg" alt="" class="content__image-item">
+            <div class="content__image-cover">
+              <p class="content__image-name">Sunset Port, Novorossiysk</p>
+            </div>
+          </div>
+          <h3 class="content__title content__title_item_method">Branco</h3>
+          <p class="content__text">
+            O branco pode significar muitas coisas diferentes, dependendo da cultura, embora em geral pode representar 
+            a bondade, luz e vida, incluindo a vida eterna mais além da morte.
+          </p>
+          <div class="content__image">
+            <img src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_white.jpg" alt="" class="content__image-item">
+            <div class="content__image-cover">
+              <p class="content__image-name">Winter River, Veretyevo</p>
+            </div>
+          </div>
+          <h3 class="content__title content__title_item_method">Preto</h3>
+          <p class="content__text">
+            O preto normalmente está associado às ideias de mal e morte, embora seja a cor de roupa e eletrônicos 
+            que frequentemente dá a sensação de ordem, elegância, e de poder misterioso.
+          </p>
+          <div class="content__image">
+            <img src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_black.jpg" alt="" class="content__image-item">
+            <div class="content__image-cover">
+              <p class="content__image-name">Embankment, Moscou</p>
+            </div>
+          </div>
+        </div>
+        <!-- fim da caixa com o terceiro capítulo -->
+
+        <!-- caixa com a conclusão -->
+        <div class="content__item">
+          <h2 class="content__title content__title_item_sub">Share!</h2>
+          <p class="content__text">
+            As imagens de telefones móveis duplicam a diversão — uma grande foto original seguida de 
+            intermináveis conversas sobre elas nas redes sociais.
+          </p>
+
+          <!-- texto da segunda citação com a mesma classe que a primeira -->
+          <p class="content__quote">
+            "Pintar com outros artistas é melhor que pintar sozinho — a inveja faz você desejar estar entre os melhores 
+            e o elogio dos outros sempre animam."
+            <span class="content__quote-origin">Leonardo da Vinci, Tratado de Pintura</span>
+          </p>
+          <p class="content__text">
+            Não esqueça de compartilhar seu trabalho, já que desta maneira o número de curtidas e de perguntas que você obterá 
+            indicará que você está no caminho certo. E quando tirar fotos suficientes, você pode vê-las novamente 
+            e descobrir algo que não sabia sobre você mesmo. Por exemplo, pergunte a você mesmo do que se trata 
+            as ideias que atraem a sua atenção. O que você pensa sobre as coisas que 
+            você fotografa? Como sua atitude mudou com o passar do tempo, e como você 
+            próprio mudou? Você pode encontrar essas respostas em seu trabalho.
+          </p>
+        </div>
+        <!-- fim da caixa com a conclusão -->
+
+        <!-- caixa com informação sobre os autores e direitos autorais -->
+        <div class="content__item content__item_type_copyright">
+          <!-- texto da linha com informação do autor -->
+          <p class="content__text content__text_type_copyright">Fotografias: Sergey Nugaev</p>
+          <p class="content__text content__text_type_copyright">Texto: Mikhail Shifrin</p>
+          <p class="content__text content__text_type_copyright">© TripleTen</p>
+        </div>
+        <!-- fim da caixa com informações sobre os autores e direitos autorais -->
+
+      </div>
+      <!-- fim da caixa com texto e ilustrações -->
+    </section>
+    <!-- fim da área do conteúdo especial -->
+  </div>
+  <!-- fim da caixa para todo o conteúdo na página web -->
+</body>
+</html>
