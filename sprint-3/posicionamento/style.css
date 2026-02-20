@@ -19,6 +19,18 @@
     font-weight: 700;
   }
   
+/* estilos para o cabeçalho sticky */
+  .sticky-header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f9f9f9;
+    padding: 10px;
+    text-align: center;
+    color: #161819;
+  }
+  
 /* propriedades aplicadas a todo o conteúdo visível da página web */
   .page {
     background-color: #161819; /* a página tem um plano de fundo escuro */
@@ -109,6 +121,7 @@
  estes precisam ser escritos separadamente devido ao seu posicionamento único */
   .menu__item {
     position: fixed;
+    z-index: 1;
   }
   
   .menu__item_theme_landscape {
