@@ -34,8 +34,7 @@ html {
 	-webkit-box-align: stretch;
 	-ms-flex-align: stretch;
 	align-items: stretch;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
+	overflow-x: auto;
 	margin-top: 40px;
 	margin-left: -10px;
 	margin-right: -10px;
@@ -48,6 +47,33 @@ html {
 	border-radius: 12px;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
+}
+
+/* Altera a cor de fundo do primeiro, terceiro e quinto cartões */
+.row__item:nth-of-type(odd) {
+	background-color: #f0f8ff; /* Azul claro */
+}
+
+/* Altera a cor de fundo do segundo, quarto e sexto cartões */
+.row__item:nth-of-type(even) {
+	background-color: #ffe4e1; /* Rosa claro */
+}
+
+/* Estiliza apenas o primeiro título h2 dentro da classe row__item */
+.row__item:first-of-type h2 {
+	font-size: 2em; /* Aumenta o tamanho */
+	color: red; /* Muda a cor para vermelho */
+	font-weight: bold; /* Deixa em negrito */
+}
+
+/* Adiciona um ponto de exclamação ao final de cada título com a classe content__title */
+.content__title::after {
+	content: "!";
+}
+
+/* Insere um ícone antes de cada título com a classe content__title */
+.content__title::before {
+	content: "🎯";
 }
 
 .card {
@@ -70,7 +96,29 @@ html {
 
 .content__paragraph {
 	height: 144px;
-	overflow: auto; /* add this line */
+	overflow: auto;
+}
+
+/* Personaliza a primeira letra dos parágrafos */
+.content__paragraph::first-letter {
+	font-size: 2em; /* Aumenta o tamanho da primeira letra */
+	font-weight: bold; /* Deixa a primeira letra em negrito */
+}
+
+.card__link {
+	background-color: rgba(0, 0, 100, 0.8);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+	opacity: 0.5;
+}
+
+.card__link:hover {
+	opacity: 1;
 }
 
 .footer {
