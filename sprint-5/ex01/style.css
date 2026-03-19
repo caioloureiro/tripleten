@@ -1,0 +1,169 @@
+@font-face {
+  font-family: 'Inter';
+  src: url(https://practicum-content.s3.us-west-1.amazonaws.com/frontend-developer/responsive/moved_Inter-Regular.woff);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url(https://practicum-content.s3.us-west-1.amazonaws.com/frontend-developer/responsive/moved_Inter-Bold.woff2);
+  font-weight: bold;
+}
+
+/* Isso não se enquadrada exatamente com os requisitos da BEM, mas pode ser usado em um projeto de estudante.
+Se fizer isso no trabalho, utilize margin: 0; dentro dos blocos */
+
+h1, h2, h3, h4, h5, h6, p, li {
+  margin: 0;
+}
+
+body {
+  background-color: #000000;
+}
+
+.page {
+  width: 1280px;
+  margin: auto;
+  font-family: 'Inter';
+}
+
+.header {
+  background-color: #000000;
+}
+
+.header__container {
+  width: 1155px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+.header__title {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.cover {
+  height: 600px;
+  background-image: url(https://practicum-content.s3.us-west-1.amazonaws.com/frontend-developer/responsive/moved_cover.png);
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  box-sizing: border-box;
+  padding: 161px 0 98px;
+}
+
+.cover__container {
+  width: 1155px;
+  margin: auto;
+}
+
+.cover__title {
+  font-size: 96px;
+  line-height: 96px;
+  width: 849px;
+}
+
+.cover__subheading {
+  font-size: 16px;
+  width: 610px;
+  margin-top: 50px;
+  line-height: 24px;
+}
+
+.content {
+  padding: 60px 0;
+  background-color: #fff;
+}
+
+.content__columns {
+  display: flex;
+  justify-content: space-between;
+  width: 1155px;
+  margin: auto;
+}
+
+.content__column {
+  width: 350px;
+}
+
+.content__column-image {
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+}
+
+.content__column-image_hero_laika {
+  background-image: url(https://practicum-content.s3.us-west-1.amazonaws.com/frontend-developer/responsive/moved_laika.png);
+}
+
+.content__column-image_hero_lunohod {
+  background-image: url(https://practicum-content.s3.us-west-1.amazonaws.com/frontend-developer/responsive/moved_lunohod.jpg);
+}
+
+.content__column-image_hero_tesla {
+  background-image: url(https://practicum-content.s3.us-west-1.amazonaws.com/frontend-developer/responsive/moved_tesla.png);
+}
+
+.content__column-title {
+  font-size: 30px;
+  margin: 37px 0 34px;
+}
+
+.column__text {
+  margin: 24px 0;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.column__quote {
+  font-size: 18px;
+  line-height: 27px;
+  margin-left: 0;
+}
+
+.column__quote-cite {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.share {
+  display: flex;
+  align-items: center;
+  margin-top: 34px;
+}
+
+.share__text {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+  margin-right: 14px;
+}
+
+.share__icon {
+  text-decoration: none;
+  display: block;
+  margin-right: 6px;
+}
+
+.share__icon:last-of-type {
+  margin-right: 0;
+}
+
+.share__icon:hover {
+  opacity: .8;
+}
+.footer {
+  height: 60px;
+  background-color: #fff;
+}
+
+.footer__copyright {
+  width: 1155px;
+  margin: auto;
+  font-size: 12px;
+  line-height: 18px;
+}
