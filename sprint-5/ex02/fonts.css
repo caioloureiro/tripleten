@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap");
+@font-face {
+	font-family: "IBM Plex Serif";
+	src:
+		url("https://practicum-content.s3.us-west-1.amazonaws.com/fonts/moved_Ibmplexserif.woff2")
+			format("woff2"),
+		url("https://practicum-content.s3.us-west-1.amazonaws.com/fonts/moved_Ibmplexserif.woff")
+			format("woff"),
+		url("https://practicum-content.s3.us-west-1.amazonaws.com/fonts/moved_Ibmplexserif.ttf")
+			format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "IBM Plex Serif";
+	src:
+		url("https://practicum-content.s3.us-west-1.amazonaws.com/fonts/moved_Ibmplexserifsemibold.woff2")
+			format("woff2"),
+		url("https://practicum-content.s3.us-west-1.amazonaws.com/fonts/moved_Ibmplexserifsemibold.woff")
+			format("woff"),
+		url("https://practicum-content.s3.us-west-1.amazonaws.com/fonts/moved_Ibmplexserifsemibold.ttf")
+			format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
