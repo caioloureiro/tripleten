@@ -38,6 +38,7 @@ html {
 }
 
 .color {
+	color: inherti;
 }
 
 .color_social {
@@ -164,7 +165,7 @@ html {
 
 .periodic-element__title,
 .periodic-element__description {
-	-webkit-background-clip: text;
+	background-clip: text;
 	-webkit-text-fill-color: transparent;
 	-webkit-transition: 0.8s ease 700ms;
 	-moz-transition: 0.8s ease 700ms;
